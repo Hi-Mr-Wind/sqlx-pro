@@ -1,0 +1,13 @@
+workspace = { members = ["sqlx_pro_macro"] }
+[package]
+name = "sqlx-pro"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+syn = "2.0"
+quote = "1.0"
+sqlx_pro_macro = {path = "sqlx_pro_macro"}
+sqlx = { version = "0.7"}
