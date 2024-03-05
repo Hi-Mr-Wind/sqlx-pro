@@ -1,8 +1,11 @@
-use std::cell::Ref;
 use std::sync::Arc;
+use log::debug;
+use crate::config::Config;
+
 use crate::core::model::{Model, TableName};
 
 pub struct Insert {
+    config:Config,
     lazy_sql: String,
     table_name: String,
     fields: Vec<String>,
@@ -12,6 +15,16 @@ pub struct Insert {
 impl Insert {
     pub fn default() -> Insert {
         Insert {
+            config: Config::default(),
+            lazy_sql: String::from("INSERT INTO {tableName} ({fields}) VALUES ({values})"),
+            table_name: String::new(),
+            fields: vec![],
+            values: vec![],
+        }
+    }
+    pub fn info(config:Config)->Insert{
+        Insert{
+            config,
             lazy_sql: String::from("INSERT INTO {tableName} ({fields}) VALUES ({values})"),
             table_name: String::new(),
             fields: vec![],
@@ -55,12 +68,15 @@ impl Insert {
 
     pub fn build(mut self) -> String {
         let field = self.fields.join(",");
-        let s = String::from(self.lazy_sql.as_str());
-        let sql = s.replace("{tableName}", &self.table_name);
+        let sql = String::from(self.lazy_sql.as_str());
+        let sql = sql.replace("{tableName}", &self.table_name);
         let sql = sql.replace("{fields}", field.as_str());
         let values = self.values.join(",");
         let binding = sql.replace("{values}", values.as_str());
         let sql = binding.as_str();
+        if self.config.sql_log {
+            debug!("{}",sql)
+        }
         String::from(sql)
     }
 }

@@ -1089,6 +1089,7 @@ dependencies = [
 name = "sqlx-pro"
 version = "0.1.0"
 dependencies = [
+ "log",
  "quote",
  "sqlx",
  "sqlx_pro_macro",

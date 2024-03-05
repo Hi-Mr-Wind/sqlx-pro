@@ -11,3 +11,4 @@ syn = "2.0"
 quote = "1.0"
 sqlx_pro_macro = {path = "sqlx_pro_macro"}
 sqlx = { version = "0.7"}
+log = "0.4.21"

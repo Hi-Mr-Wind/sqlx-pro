@@ -7,68 +7,16 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/.rustc_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/CACHEDIR.TAG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.cargo-lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-66c397345d38d065/build-script-build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-66c397345d38d065/build-script-build-script-build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-66c397345d38d065/dep-build-script-build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-66c397345d38d065/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-b14b9af083a833d0/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-b14b9af083a833d0/lib-proc-macro2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-b14b9af083a833d0/lib-proc-macro2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-d6565dc9bac26382/run-build-script-build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/proc-macro2-d6565dc9bac26382/run-build-script-build-script-build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/quote-8d218f2901828ca0/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/quote-8d218f2901828ca0/lib-quote" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/quote-8d218f2901828ca0/lib-quote.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/sqlx_pro_macro-65db8250e333f268/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/sqlx_pro_macro-65db8250e333f268/test-lib-sqlx_pro_macro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/sqlx_pro_macro-65db8250e333f268/test-lib-sqlx_pro_macro.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/sqlx_pro_macro-f31b9fa6b205503d/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/sqlx_pro_macro-f31b9fa6b205503d/lib-sqlx_pro_macro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/sqlx_pro_macro-f31b9fa6b205503d/lib-sqlx_pro_macro.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-c59cd7a6f2d9f9aa/build-script-build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-c59cd7a6f2d9f9aa/build-script-build-script-build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-c59cd7a6f2d9f9aa/dep-build-script-build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-c59cd7a6f2d9f9aa/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-c69d61e703db3ada/run-build-script-build-script-build" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-c69d61e703db3ada/run-build-script-build-script-build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-ecbc6a97c49a21c4/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-ecbc6a97c49a21c4/lib-syn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/syn-ecbc6a97c49a21c4/lib-syn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/unicode-ident-2a59b90dbb2092ca/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/unicode-ident-2a59b90dbb2092ca/lib-unicode-ident" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/.fingerprint/unicode-ident-2a59b90dbb2092ca/lib-unicode-ident.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-66c397345d38d065/build-script-build.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-66c397345d38d065/build_script_build-66c397345d38d065.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-66c397345d38d065/build_script_build-66c397345d38d065.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-66c397345d38d065/build_script_build-66c397345d38d065.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-66c397345d38d065/build_script_build.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-d6565dc9bac26382/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-d6565dc9bac26382/out/proc_macro2.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-d6565dc9bac26382/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-d6565dc9bac26382/root-output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/proc-macro2-d6565dc9bac26382/stderr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c59cd7a6f2d9f9aa/build-script-build.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c59cd7a6f2d9f9aa/build_script_build-c59cd7a6f2d9f9aa.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c59cd7a6f2d9f9aa/build_script_build-c59cd7a6f2d9f9aa.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c59cd7a6f2d9f9aa/build_script_build-c59cd7a6f2d9f9aa.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c59cd7a6f2d9f9aa/build_script_build.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c69d61e703db3ada/invoked.timestamp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c69d61e703db3ada/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c69d61e703db3ada/root-output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlx_pro_macro/target/debug/build/syn-c69d61e703db3ada/stderr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/config_enum.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/model.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/sql.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test.rs" afterDir="false" />
+    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="添加基础宏">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqlx-pro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/sql/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/sql.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/insert.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +71,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sqlx-pro\src\core\sql" />
+    </key>
+  </component>
   <component name="RunManager" selected="Cargo.Test test">
     <configuration name="Build sqlx-pro" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="build --package sqlx-pro --lib" />
@@ -229,8 +182,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709647952230</updated>
-      <workItem from="1709647953466" duration="4919000" />
+      <workItem from="1709647953466" duration="5630000" />
     </task>
+    <task id="LOCAL-00001" summary="添加基础宏">
+      <option name="closed" value="true" />
+      <created>1709652911044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709652911044</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,5 +200,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="添加基础宏" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加基础宏" />
   </component>
 </project>

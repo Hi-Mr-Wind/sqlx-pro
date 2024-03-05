@@ -1,7 +1,7 @@
-use std::cell::Ref;
 use std::sync::Arc;
-use sqlx_pro::core::sql::Insert;
-use sqlx_pro_macro::{table_name, Entity};
+
+use sqlx_pro::core::sql::insert::Insert;
+use sqlx_pro_macro::table_name;
 
 #[table_name("测试表名")]
 struct UserT {
