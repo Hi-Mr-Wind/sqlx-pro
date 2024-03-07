@@ -50,14 +50,11 @@ pub fn table_name(attr_input: TokenStream, annotated_item: TokenStream) -> Token
         .map(|field| field.ident.as_ref().unwrap().to_string());
     // 创建一个实现TableName trait的方法，返回字符串化后的表名
     let table_name_impl = quote! {
-        use sqlx_pro::core::model::TableName;
-        use sqlx_pro::core::model::Model;
-        impl TableName for #struct_ident {
+        use sqlx_pro::core::model::Entity;
+        impl Entity for #struct_ident {
             fn get_table_name(&self) -> String {
                 #table_name.to_string()
             }
-        }
-        impl Model for #struct_ident {
             fn get_fields(&self) -> Vec<String> {
                 vec![
                     #(#fields_names.to_string(),)*

@@ -25,4 +25,5 @@ fn test() {
         .build();
     // println!("{}", vec.join(","));
     println!("参数：{}", string)
+    s.age.to_string()
 }

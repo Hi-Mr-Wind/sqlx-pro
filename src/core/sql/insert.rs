@@ -1,62 +1,47 @@
 use std::sync::Arc;
-use log::debug;
+use log::{debug, info};
 use crate::config::Config;
 
-use crate::core::model::{Model, TableName};
+use crate::core::model::{Entity, Model, TableName};
 
-pub struct Insert {
+pub struct Insert<'e> {
     config:Config,
     lazy_sql: String,
     table_name: String,
     fields: Vec<String>,
     values: Vec<String>,
+    entity: &'e dyn Entity,
 }
 
 impl Insert {
-    pub fn default() -> Insert {
-        Insert {
-            config: Config::default(),
-            lazy_sql: String::from("INSERT INTO {tableName} ({fields}) VALUES ({values})"),
-            table_name: String::new(),
-            fields: vec![],
-            values: vec![],
-        }
+    pub fn default(entity: &dyn Entity) -> Insert {
+        Insert::info(Config::default(),entity)
     }
-    pub fn info(config:Config)->Insert{
+    pub fn info(config:Config,entity: &dyn Entity)->Insert{
         Insert{
             config,
             lazy_sql: String::from("INSERT INTO {tableName} ({fields}) VALUES ({values})"),
-            table_name: String::new(),
-            fields: vec![],
+            table_name: entity.get_table_name(),
+            fields: entity.get_fields(),
             values: vec![],
+            entity
         }
     }
 
-    pub fn table(mut self, model: Arc<dyn TableName>) -> Self {
-        self.table_name = model.get_table_name();
-        self
-    }
     pub fn table_str(mut self, model: &str) -> Self {
         self.table_name = model.to_string();
         self
     }
 
     /// 传入字段名称，需依照顺序
-    pub fn set_fields_for_vec(mut self, fields: Vec<String>) -> Self {
+    pub fn set_fields(mut self, fields: Vec<String>) -> Self {
         let fields = fields.into_iter()
             .map(|s| format!("'{}'", s))
             .collect();
         self.fields = fields;
         self
     }
-    pub fn set_fields(mut self, model: Arc<dyn Model>) -> Self {
-        let fields = model.get_fields();
-        let fields = fields.into_iter()
-            .map(|s| format!("'{}'", s))
-            .collect();
-        self.fields = fields;
-        self
-    }
+
     /// 要插入数据库的值
     pub fn set_values(mut self, values: Vec<String>) -> Self {
         let values = values.into_iter()
