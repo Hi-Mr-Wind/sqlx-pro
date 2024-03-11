@@ -7,14 +7,11 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="添加基础宏">
-      <change afterPath="$PROJECT_DIR$/src/core/sql/select.rs" afterDir="false" />
+    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="优化insert">
+      <change afterPath="$PROJECT_DIR$/src/core/sql/delete.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sqlx_pro_macro/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/sqlx_pro_macro/src/lib.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/model.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/model.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/sql/insert.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/insert.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/sql/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/sql/select.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/select.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +163,8 @@
       <updated>1709647952230</updated>
       <workItem from="1709647953466" duration="5630000" />
       <workItem from="1709810627753" duration="103000" />
-      <workItem from="1709810742790" duration="2834000" />
+      <workItem from="1709810742790" duration="2873000" />
+      <workItem from="1710157180201" duration="1875000" />
     </task>
     <task id="LOCAL-00001" summary="添加基础宏">
       <option name="closed" value="true" />
@@ -176,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709652911044</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="优化insert">
+      <option name="closed" value="true" />
+      <created>1709819848954</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709819848954</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +191,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="添加基础宏" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加基础宏" />
+    <MESSAGE value="优化insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化insert" />
   </component>
 </project>

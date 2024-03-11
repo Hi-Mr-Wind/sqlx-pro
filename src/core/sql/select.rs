@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std::ops::Add;
 
 use crate::config::Config;
 use crate::core::model::Entity;
@@ -11,7 +12,15 @@ pub struct Select<'e> {
     values: Vec<String>,
     entity: &'e dyn Entity,
     model: Vec<String>,
+    wheres: bool,
+    //等于
     eq: HashMap<String, String>,
+    //大于
+    gt: HashMap<String, String>,
+    //小于
+    lt: HashMap<String, String>,
+    //不等于
+    neq: HashMap<String, String>,
 }
 
 impl Select {
@@ -27,7 +36,11 @@ impl Select {
             values: vec![],
             entity,
             model: vec![],
+            wheres: false,
             eq: HashMap::new(),
+            gt: Default::default(),
+            lt: Default::default(),
+            neq: Default::default(),
         }
     }
 
@@ -36,12 +49,14 @@ impl Select {
         self
     }
 
-    pub fn eq<T>(mut self, field: String, value: T) -> Self {
-        self.eq.insert(field, value.to_String());
+    pub fn eq<T>(mut self, field: &str, value: T) -> Self {
+        self.wheres = true;
+        self.eq.insert(field.to_string(), value.to_String());
         self
     }
 
     pub fn eq_map<T>(mut self, data: HashMap<String, T>) -> self {
+        self.wheres = true;
         for (key, value) in data {
             self.eq.insert(key, value.to_String());
         }
@@ -52,6 +67,23 @@ impl Select {
         let field = self.fields.join(",");
         let sql = String::from(self.lazy_sql.as_str());
         let sql = sql.replace("{tableName}", &self.table_name);
-        let sql = sql.replace("{fields}", field.as_str());
+        let mut sql = sql.replace("{fields}", field.as_str());
+        if self.wheres {
+            if sql.contains("WHERE ") {} else {
+                let mut sql = sql.add("WHERE ");
+                let mut fields_value: Vec<String> = vec![];
+                if !self.eq.is_empty() {
+                    for (k, v) in self.eq {
+                        let mut field = k.add("=");
+                        let mut field = field.add(v.as_str());
+                        let field = field.add("AND");
+                        fields_value.push(field)
+                    }
+                }
+
+
+            }
+        }
+        sql
     }
 }
