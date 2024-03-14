@@ -41,10 +41,10 @@ impl Del<'_> {
         self
     }
 
-    pub fn eq_map<T: Display>(mut self, data: HashMap<String, T>) -> Self {
+    pub fn eq_map<T: Display>(mut self, data: &HashMap<String, T>) -> Self {
         self.wheres = true;
         for (key, value) in data {
-            self.eq.insert(key, value.to_string());
+            self.eq.insert(key.clone(), value.to_string());
         }
         self
     }

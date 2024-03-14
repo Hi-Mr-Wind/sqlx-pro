@@ -7,11 +7,9 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="添加部分select">
+    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="添加delete语句等于条件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/sql/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/delete.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/sql/insert.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/insert.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/sql/select.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/select.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +62,7 @@
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "settings.editor.selected.configurable": "http.proxy",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -166,7 +165,7 @@
       <workItem from="1709810627753" duration="103000" />
       <workItem from="1709810742790" duration="2873000" />
       <workItem from="1710157180201" duration="1928000" />
-      <workItem from="1710420948136" duration="4006000" />
+      <workItem from="1710420948136" duration="4832000" />
     </task>
     <task id="LOCAL-00001" summary="添加基础宏">
       <option name="closed" value="true" />
@@ -192,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710165683261</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加delete语句等于条件">
+      <option name="closed" value="true" />
+      <created>1710432633585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710432633585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +210,7 @@
     <MESSAGE value="添加基础宏" />
     <MESSAGE value="优化insert" />
     <MESSAGE value="添加部分select" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加部分select" />
+    <MESSAGE value="添加delete语句等于条件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加delete语句等于条件" />
   </component>
 </project>

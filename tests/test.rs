@@ -1,4 +1,4 @@
-use std::sync::Arc;
+use std::collections::HashMap;
 
 use sqlx_pro::core::sql::delete::Del;
 use sqlx_pro::core::sql::insert::Insert;
@@ -26,10 +26,12 @@ fn test() {
     // println!("{}", vec.join(","));
     println!("select语句：{}", string);
 
-
+    let mut map = HashMap::new();
+    map.insert("phone".to_string(),"18888888888".to_string());
     let del = Del::default(&s)
         .eq("name","1")
         .eq("age","3")
+        .eq_map(&map)
         .build();
     println!("delete语句：{}",del)
 
