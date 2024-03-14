@@ -1,5 +1,6 @@
 use std::sync::Arc;
 
+use sqlx_pro::core::sql::delete::Del;
 use sqlx_pro::core::sql::insert::Insert;
 use sqlx_pro_macro::table_name;
 
@@ -17,13 +18,19 @@ fn test() {
         age: 18,
         phone: "18888888888".to_string(),
     };
-    let arc = Arc::new(s);
-    let string = Insert::default()
-        .table(arc.clone())
-        .set_fields(arc.clone())
+    let string = Insert::default(&s)
+        // .table(arc.clone())
+        // .set_fields(arc.clone())
         .set_values(vec!["李四".to_string(), "20".to_string(), "123".to_string()])
         .build();
     // println!("{}", vec.join(","));
-    println!("参数：{}", string)
-    s.age.to_string()
+    println!("select语句：{}", string);
+
+
+    let del = Del::default(&s)
+        .eq("name","1")
+        .eq("age","3")
+        .build();
+    println!("delete语句：{}",del)
+
 }

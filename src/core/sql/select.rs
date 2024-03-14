@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+use std::fmt::Display;
 use std::ops::Add;
 
 use crate::config::Config;
@@ -23,7 +24,7 @@ pub struct Select<'e> {
     neq: HashMap<String, String>,
 }
 
-impl Select {
+impl Select<'_> {
     pub fn default(entity: &dyn Entity) -> Select {
         Select::info(Config::default(), entity)
     }
@@ -49,16 +50,16 @@ impl Select {
         self
     }
 
-    pub fn eq<T>(mut self, field: &str, value: T) -> Self {
+    pub fn eq<T: Display>(mut self, field: &str, value: T) -> Self {
         self.wheres = true;
-        self.eq.insert(field.to_string(), value.to_String());
+        self.eq.insert(field.to_string(), value.to_string());
         self
     }
 
-    pub fn eq_map<T>(mut self, data: HashMap<String, T>) -> self {
+    pub fn eq_map<T: Display>(mut self, data: HashMap<String, T>) -> Self {
         self.wheres = true;
         for (key, value) in data {
-            self.eq.insert(key, value.to_String());
+            self.eq.insert(key, value.to_string());
         }
         self
     }
@@ -69,14 +70,16 @@ impl Select {
         let sql = sql.replace("{tableName}", &self.table_name);
         let mut sql = sql.replace("{fields}", field.as_str());
         if self.wheres {
-            if sql.contains("WHERE ") {} else {
+            if sql.contains("WHERE ") {
+
+            } else {
                 let mut sql = sql.add("WHERE ");
                 let mut fields_value: Vec<String> = vec![];
                 if !self.eq.is_empty() {
                     for (k, v) in self.eq {
                         let mut field = k.add("=");
                         let mut field = field.add(v.as_str());
-                        let field = field.add("AND");
+                        let field = field.add(" AND");
                         fields_value.push(field)
                     }
                 }
@@ -84,6 +87,6 @@ impl Select {
 
             }
         }
-        sql
+        String::from("")
     }
 }

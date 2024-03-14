@@ -13,7 +13,7 @@ pub struct Insert<'e> {
     entity: &'e dyn Entity,
 }
 
-impl Insert {
+impl Insert<'_> {
     pub fn default(entity: &dyn Entity) -> Insert {
         Insert::info(Config::default(),entity)
     }

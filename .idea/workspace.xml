@@ -7,11 +7,12 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="优化insert">
-      <change afterPath="$PROJECT_DIR$/src/core/sql/delete.rs" afterDir="false" />
+    <list default="true" id="93bcf3a7-2abc-4893-8ead-418ac4efe0f6" name="更改" comment="添加部分select">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/sql/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/sql/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/sql/insert.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/insert.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/core/sql/select.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/sql/select.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.rs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Cargo.Build sqlx-pro.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Build sqlx_pro_macro.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/sqlx-pro/Cargo.toml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Cargo.Build sqlx-pro.executor": "Run",
+    "Cargo.Build sqlx_pro_macro.executor": "Run",
+    "Cargo.Test test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/sqlx-pro/Cargo.toml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\sqlx-pro\src\core\sql" />
@@ -164,7 +165,8 @@
       <workItem from="1709647953466" duration="5630000" />
       <workItem from="1709810627753" duration="103000" />
       <workItem from="1709810742790" duration="2873000" />
-      <workItem from="1710157180201" duration="1875000" />
+      <workItem from="1710157180201" duration="1928000" />
+      <workItem from="1710420948136" duration="4006000" />
     </task>
     <task id="LOCAL-00001" summary="添加基础宏">
       <option name="closed" value="true" />
@@ -182,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709819848954</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加部分select">
+      <option name="closed" value="true" />
+      <created>1710165683261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710165683261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +202,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="添加基础宏" />
     <MESSAGE value="优化insert" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化insert" />
+    <MESSAGE value="添加部分select" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部分select" />
   </component>
 </project>
